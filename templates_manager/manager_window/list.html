@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salons_list</title>
+</head>
+<body>
+    <div class="container_salons">
+        {% for salon in salons %}
+        <div class="salon">
+            <img src={{salon.image.url}} alt="не получилось">
+            <p>{{ salon.address }}</p>
+            <a href = {{salon.id}}> {{ salon.name }} </a>
+            <p> {{ salon.social.name }} </p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

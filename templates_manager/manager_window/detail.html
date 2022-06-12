@@ -1,0 +1,17 @@
+<p>Название салона</p>
+<h1>{{ salon.name }}</h1>
+<p>Соц. сети</p>
+{% for social in socials %} 
+
+<p> {{ social.name }} <br>
+ {% endfor %} 
+<p>Услуги</p>
+ {% for service in services %} 
+
+<p> Название: {{ service.name }} <br>
+</p>
+<p>Цена: {{ service.price }} <br>
+</p>
+<p>Время оказания: {{ service.duration }} <br>
+</p>
+ {% endfor %} 
