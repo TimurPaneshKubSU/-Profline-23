@@ -10,7 +10,7 @@ class Service(models.Model):
 
     """
 
-    name = models.CharField(verbose_name='Нименование услуги', max_length=256)
+    FIO = models.CharField(verbose_name='Нименование услуги', max_length=256)
     duration = models.CharField(verbose_name='Время оказания', max_length=256)
     price = models.CharField(verbose_name='Цена', max_length=256)
     salon = models.ForeignKey(Salon, on_delete=models.CASCADE)
